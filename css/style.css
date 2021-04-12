@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-color: black;
+    font-family: 'Space Mono', monospace;
+}
+
+.banner{
+    background: url("../img/background.jpg") center / cover fixed;
+    width: 100%;
+    height: 100vh;
+}
+.inline{
+    background: rgb(32,127,201);
+    background: linear-gradient(90deg, rgba(32,127,201,1) 0%, rgba(29,71,253,1) 33%, rgba(9,53,112,1) 78%);
+    transform: skew(-40deg);
+    width: 60%;
+    position: relative;
+    left: 20%;
+    padding: 20px 50px;
+    box-shadow: 0 0 20px white,
+    0 0 20px rgb(41, 148, 167),
+    0 0 20px white,
+    0 0 20px rgb(41, 148, 167)
+    ;
+    margin: 0;
+}
+.inline li{
+    display: inline-flex;
+    list-style: none;
+    margin-left: 50px;
+    position: relative;
+    left: 25%;
+    
+}
+.inline li a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    transform: skew(40deg);
+}
+.inline li a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+.centerCard{
+    margin-top: 100px;
+    margin-left: 150px;
+}
+.card img{
+    position: fixed;
+}
+.card{
+    width: 30%;
+    background: url("../img/sun.gif") center / cover;
+    width: 400px;
+    height: 0px;
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+    transition: 3s;
+    transition-delay: 5s;
+}
+.card:hover{
+    height: 360px;
+    transition: 3s;
+}
+.card h1{
+    text-align: center;
+    color: blue;
+}   
+
+
+
+#h1 h1{
+    margin-top: 50px;
+    color: yellow;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 50px;
+}
+.centerGalag{
+    background: url("../img/back2.jpg") center / cover;
+    width: 100%;
+    height: 100vh;
+    
+}
+.inlineGalag{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+
+}
+.cards{
+    background-color: rgba(0, 0, 0, 0.76);
+    width: 350px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 0 0 20px yellow;
+    transition: 1s;
+    padding-bottom: 40px;
+}
+.cards .progressCenter{
+    margin-top: 80px;
+}
+.cards h1{
+    margin-left: 30px;
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+.progress1 span{
+    width: 30%;
+    height: 15px;
+    background-color: yellow;
+    transition: 1s;
+    position: absolute;
+}
+.progress1{
+    width: 300px; 
+    margin-top: 30px;
+    margin-left: 30px;
+    height: 15px;
+    border: 1px solid white;
+    transform: skew(-40deg);
+}
+.progress2 span{
+    width: 60%;
+    height: 15px;
+    background-color: blue;
+    transition: 1s;
+    position: absolute;
+}
+.progress2{
+    width: 300px; 
+    margin-top: 30px;
+    margin-left: 30px;
+    height: 15px;
+    border: 1px solid white;
+    transform: skew(-40deg);
+}
+.progress3 span{
+    width: 100%;
+    height: 15px;
+    background-color: red;
+    transition: 1s;
+    position: absolute;
+}
+.progress3{
+    width: 300px; 
+    margin-top: 30px;
+    margin-left: 30px;
+    height: 15px;
+    border: 1px solid white;
+    transform: skew(-40deg);
+}
+
+.cards:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: 0 0 20px white;
+    
+}
+
+
+
+
+
+
+footer a{
+    color: white;
+    margin-top: 150px;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1280px){
+    .inlineGalag{
+        flex-direction: column;
+        margin-left: 300px;
+    }
+    .centerGalag{
+        height: 200%;
+    }
+    .cards{
+        margin-bottom: 100px;
+    }
+    .banner{
+        height: 90vh;
+    }
+}
+
+
+@media (max-width:390px){
+    .banner{
+        height: 40vh;
+    }
+}
